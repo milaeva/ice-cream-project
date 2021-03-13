@@ -15,7 +15,7 @@
             font-size: 16px;
             line-height: 21px;
             font-weight: bold;
-            color: #D41443;
+            color: var(--color-accent);
             background: #FFFFFF;
             &:hover,
             &:focus {
@@ -45,6 +45,11 @@
             font-size: 14px;
             line-height: 18px;
             color: #FFFFFF;
+            transition: all 250ms;
+            &:hover,
+            &:focus {
+                color: var(--color-accent);
+            }
         }
         .header-link--current {
             color: var(--color-accent);
@@ -58,8 +63,9 @@
         padding: 60px 0px;
         height: 100%;
         width: 250px;
-        transition: all 500ms;
+        transition: all 250ms;
         transform: translateX(300px);
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.50), 0 10px 10px rgba(0, 0, 0, 0.22);
         background-color: var(--background-mobile-menu);
     }
     
