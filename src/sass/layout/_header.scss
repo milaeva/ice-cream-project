@@ -17,13 +17,14 @@
                 background: #ECEBEB;
             }
         }
-        .header-block {
+        .buttons--buy .header-block {
             margin-top: 32px;
         }
         .header-list {
             margin: 11px 0px 11px 24px;
         }
         .header-link {
+            display: block;
             font-family: var(--text-main-font);
             font-weight: bold;
             font-size: 14px;
@@ -46,7 +47,6 @@
     }
     
     .underline {
-        display: block;
         width: 100%;
         border: 1px solid #E18298;
     }
