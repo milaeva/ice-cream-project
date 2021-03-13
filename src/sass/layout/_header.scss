@@ -2,6 +2,10 @@
         background-color: var(--sub-title-elipse);
     }
     
+    .logo {
+        padding: 6px 0px;
+    }
+    
     @media screen and (max-width: 767px) {
         .buttons--buy {
             position: relative;
@@ -18,14 +22,18 @@
                 background: #ECEBEB;
             }
         }
-        .buttons--buy .header-block {
-            margin-top: 32px;
+        .buttons--center {
+            position: absolute;
+            left: 10%;
         }
         .buttons-buy--svg {
             position: absolute;
             height: 10px;
             top: 40%;
             right: -50%;
+        }
+        .header-block {
+            margin-top: 76px;
         }
         .header-list {
             margin: 11px 0px 11px 24px;
@@ -46,12 +54,12 @@
     .burger-menu {
         position: fixed;
         top: 0%;
-        left: 0%;
+        right: 0%;
         padding: 60px 0px;
         height: 100%;
-        width: 100%;
-        transition: all 250ms;
-        transform: translateX(1000px);
+        width: 250px;
+        transition: all 500ms;
+        transform: translateX(300px);
         background-color: var(--background-mobile-menu);
     }
     
@@ -61,5 +69,6 @@
     
     .underline {
         width: 100%;
+        margin: 0%;
         border: 1px solid #E18298;
     }
