@@ -4,6 +4,7 @@
     
     @media screen and (max-width: 767px) {
         .buttons--buy {
+            position: relative;
             margin: 0px;
             width: 209px;
             height: 44px;
@@ -19,6 +20,12 @@
         }
         .buttons--buy .header-block {
             margin-top: 32px;
+        }
+        .buttons-buy--svg {
+            position: absolute;
+            height: 10px;
+            top: 40%;
+            right: -50%;
         }
         .header-list {
             margin: 11px 0px 11px 24px;
@@ -43,7 +50,13 @@
         padding: 60px 0px;
         height: 100%;
         width: 100%;
+        transition: all 250ms;
+        transform: translateX(1000px);
         background-color: var(--background-mobile-menu);
+    }
+    
+    .burger-menu.is-open {
+        transform: translateX(0px);
     }
     
     .underline {
