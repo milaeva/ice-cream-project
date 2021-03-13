@@ -1,36 +1,59 @@
 <section class="gallery">
   <div class="container">
-     <picture>
-                <source
-                  srcset="./img/team/team-desktop-1.webp 1x, ./img/team/team-desktop-1@2x.webp 2x"
-                  media="(min-width: 1200px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="./img/team/team-desktop-1.jpg 1x, ./img/team/team-desktop-1@2x.jpg 2x"
-                  media="(min-width: 1200px)"
-                />
+    <picture>
+      <source
+        srcset="
+          /images/gallery/desktop/photos@1x.webp 1x,
+          /images/gallery/desktop/photos@2x.webp 2x
+        "
+        media="(min-width: 1200px)"
+        type="image/webp"
+      />
+      <source
+        srcset="
+          /images/gallery/desktop/photos@1x.jpg 1x,
+          /images/gallery/desktop/photos@2x.jpg 2x
+        "
+        media="(min-width: 1200px)"
+      />
 
-                <source
-                  srcset="./img/team/team-tablet-1.webp 1x, ./img/team/team-tablet-1@2x.webp 2x"
-                  media="(min-width: 768px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="./img/team/team-tablet-1.jpg 1x, ./img/team/team-tablet-1@2x.jpg 2x"
-                  media="(min-width: 768px)"
-                />
+      <source
+        srcset="
+          /images/gallery/tablet/photos@1x.webp 1x,
+          /images/gallery/tablet/photos@2x.webp 2x
+        "
+        media="(min-width: 768px)"
+        type="image/webp"
+      />
+      <source
+        srcset="
+          /images/gallery/tablet/photos@1x.jpg 1x,
+          /images/gallery/tablet/photos@2x.jpg 2x
+        "
+        media="(min-width: 768px)"
+      />
 
-                <source
-                  srcset="./img/team/team-mobile-1.webp 1x, ./img/team/team-mobile-1@2x.webp 2x"
-                  media="(min-width: 480px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="./img/team/team-mobile-1.jpg 1x, ./img/team/team-mobile-1@2x.jpg 2x"
-                  media="(min-width: 480px)"
-                />
-                <img class="team-img" src="./img/team/team-mobile-1.jpg" alt="Игорь Демьяненко" />
-              </picture>
+      <source
+        srcset="
+          /images/gallery/mobile/photos@1x.webp 1x,
+          /images/gallery/mobile/photos@2x.webp 2x
+        "
+        media="(min-width: 480px)"
+        type="image/webp"
+      />
+      <source
+        srcset="
+          /images/gallery/mobile/photos@1x.jpg 1x,
+          /images/gallery/mobile/photos@2x.jpg 2x
+        "
+        media="(min-width: 480px)"
+      />
+      <img
+        class="team-img"
+        src="/images/gallery/mobile/photos@1x.jpg"
+        alt="Мороженое"
+      />
+    </picture>
   </div>
 </section>
+
