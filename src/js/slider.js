@@ -1,11 +1,9 @@
-
-$(document).ready(function(){
+$(document).ready(function () {
   $('.slider').slick({
-     dots: true,
-infinite: true,
-   autoplay: true,
-   autoplaySpeed: 5000,
-  cssEase: 'linear'
-   });
- });
-	
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    cssEase: 'linear',
+  });
+});

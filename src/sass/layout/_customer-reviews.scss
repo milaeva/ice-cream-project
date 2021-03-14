@@ -2,6 +2,10 @@
   padding-bottom: 86px;
 }
 
+.slider {
+  padding-bottom: 30px;
+}
+
 .slider-item {
   margin: 0 auto;
 
@@ -82,6 +86,14 @@
   }
 }
 
+.slick-dots li button:before {
+  font-size: 12px;
+}
+
+.slick-dots li.slick-active button:before {
+  content: url('../../images/customer-reviews/home.svg');
+}
+
 @media screen and (min-width: 480px) {
   .slider-text-wrapper {
     padding: 43px 63px 26px 63px;
@@ -142,6 +154,14 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .customer-reviews {
+    padding-bottom: 132px;
+  }
+
+  .slider {
+    padding-bottom: 35px;
+  }
+
   .slider-text-wrapper {
     margin-bottom: 15px;
     padding: 47px 88px 39px;
