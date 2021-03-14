@@ -6,9 +6,14 @@
   margin-bottom: 25px;
 }
 .arrow {
-  fill: black;
-  width: 10px;
+  fill: transparent;
+  stroke: var(--color-accent);
+  width: 8px;
   height: 10px;
+  margin-left: 13px;
+  transition-property: stroke;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--time-function);
 }
 .contacts {
   font: var(--text-main-font);
@@ -31,10 +36,20 @@
     font-weight: bold;
     font-size: 16px;
     line-height: 1.31;
+    transition-property: background-color, color;
+    transition-duration: var(--transition-time);
+    transition-timing-function: var(--time-function);
+  }
+
+  &-active .arrow,
+  &-button:hover .arrow,
+  &-button:focus .arrow {
+    stroke: var(--background-elements);
   }
   &-active,
   &-button:hover,
   &-button:focus {
+    cursor: pointer;
     background-color: var(--color-accent);
     color: var(--background-elements);
   }
@@ -233,7 +248,7 @@
       margin-right: 15px;
     }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     .dash {
       margin-bottom: 32px;
     }
