@@ -1,47 +1,59 @@
 <header>
   <div class="container">
-    <div>
-      <source srceset="" media="(min-width: px)" />
-      <source srceset="" media="(min-width: px)" />
-      <source srceset="" media="(min-width: px)" />
-      <source srceset="" media="(min-width: px)" />
-      <source srceset="" media="(min-width: px)" />
-      <source srceset="" media="(min-width: px)" />
-      <source srceset="" media="(min-width: px)" />
-      <source srceset="" media="(min-width: px)" />
-      <source srceset="" media="(min-width: px)" />
-      <source srceset="" media="(min-width: px)" />
-      <source srceset="" media="(min-width: px)" />
-      <source srceset="" media="(min-width: px)" />
-      <!-- <img src="../images/hero/desktop/logo@1x.png" alt="Logo"> -->
+    <div class="logo">
+      <source srceset="./images/hero/desktop/logo@1x.webp 1x, ./images/hero/desktop/logo@2x.webp 2x"
+        media="(min-width: 1280px)">
+      <source srceset="./images/hero/desktop/logo@1x.png 1x, ./images/hero/desktop/logo@2x.png 2x"
+        media="(min-width: 1280px)">
+      <source srceset="./images/hero/tablet/logo@1x.webp 1x, ./images/hero/tablet/logo@2x.webp 2x"
+        media="(min-width: 768px)">
+      <source srceset="./images/hero/tablet/logo@1x.png 1x, ./images/hero/tablet/logo@2x.png 2x"
+        media="(min-width: 768px)">
+      <source srceset="./images/hero/mobile/logo@1x.webp 1x, ./images/hero/mobile/logo@2x.webp 2x"
+        media="(min-width: 480px)">
+      <source srceset="./images/hero/mobile/logo@1x.png 1x, ./images/hero/mobile/logo@2x.png 2x"
+        media="(min-width: 480px)">
+      <source srceset="./images/hero/mobile/logo@1x.png 1x, ./images/hero/mobile/logo@2x.png 2x"
+        media="(max-width: 480px)">
+      <img src="./images/hero/desktop/logo@1x.png" alt="Logo">
     </div>
-    <button class="burger-btn"><span class="burger-btn--span"></span></button>
-    <div class="burger-menu">
-      <button class="buttons buttons--buy">
+    <button class="burger-btn" data-menu-button>
+      <span class="burger-btn--span"></span>
+    </button>
+    <div class="burger-menu" data-menu>
+      <button class="buttons buttons--buy buttons--center" type="button" data-modal-open>
         Buy now
-        <svg>
-          <!-- <use href="./images/symbol-defs.svg#icon-pointer"></use> -->
+        <svg class="buttons-buy--svg">
+          <use href="./images/sprite/symbol-defs.svg#icon-pointer"></use>
         </svg>
       </button>
       <nav class="header-nav">
         <ul class="header-block">
+          <hr class="underline">
           <li class="header-list">
             <a class="header-link header-link--current" href="#">Home</a>
           </li>
+          <hr class="underline">
           <li class="header-list">
             <a class="header-link" href="#">About us</a>
           </li>
+          <hr class="underline">
+
           <li class="header-list">
             <a class="header-link" href="#">How it's made?</a>
           </li>
+          <hr class="underline">
           <li class="header-list">
             <a class="header-link" href="#">Our products</a>
           </li>
+          <hr class="underline">
           <li class="header-list">
             <a class="header-link" href="#">Contact</a>
           </li>
+          <hr class="underline">
         </ul>
+
       </nav>
     </div>
   </div>
-</header>
+  

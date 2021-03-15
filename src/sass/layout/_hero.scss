@@ -1,5 +1,5 @@
 .hero {
-  background-color: $products-ice-cream;
+  background-color: var(--products-ice-cream);
 }
 .hero-container {
   position: relative;
@@ -19,7 +19,7 @@
     margin-left: auto;
     margin-right: auto;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 1200px;
     padding-left: 75px;
     padding-right: 75px;
@@ -47,7 +47,7 @@
   font-weight: 400;
   font-size: 26px;
   line-height: 1.1;
-  color: $main-white-color;
+  color: var(--background-elements);
 
   position: relative;
   z-index: 5;
@@ -57,7 +57,7 @@
   @media screen and (min-width: 768px) {
     font-size: 22px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 38px;
     margin-bottom: 25px;
   }
@@ -69,14 +69,14 @@
   font-weight: 400;
   font-size: 48px;
   line-height: 0.96;
-  color: $color-accent;
+  color: var(--color-accent);
 
   transition: 250ms;
 
   @media screen and (min-width: 768px) {
     font-size: 34px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 58px;
   }
 }
@@ -113,18 +113,18 @@ $time-delay: 0s, 100ms, 200ms, 300ms, 400ms, 500ms, 600ms, 700ms;
   @media screen and (min-width: 768px) {
     margin-bottom: 19px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 56px;
   }
   li:first-child {
     margin-right: 8px;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       margin-right: 15px;
     }
     & .hero-button {
-      background-color: $color-accent;
-      color: $main-white-color;
+      background-color: var(--color-accent);
+      color: var(--background-elements);
 
       &:hover,
       &:focus {
@@ -148,7 +148,7 @@ $time-delay: 0s, 100ms, 200ms, 300ms, 400ms, 500ms, 600ms, 700ms;
   font-size: 8px;
   font-weight: 400;
   line-height: 1.3;
-  color: $color-accent;
+  color: var(--color-accent);
 
   transition: 250ms;
 
@@ -158,7 +158,7 @@ $time-delay: 0s, 100ms, 200ms, 300ms, 400ms, 500ms, 600ms, 700ms;
     box-shadow: 0px 8px 50px rgba(210, 20, 67, 0.6);
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 14px;
     padding: 10px 15px;
   }
@@ -192,7 +192,7 @@ $time-delay: 0s, 100ms, 200ms, 300ms, 400ms, 500ms, 600ms, 700ms;
     left: 378px;
     width: 143px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     left: 594px;
     width: 236px;
   }
@@ -226,7 +226,7 @@ $time-delay: 0s, 100ms, 200ms, 300ms, 400ms, 500ms, 600ms, 700ms;
     object-fit: cover;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 188px;
     height: 191px;
     margin-bottom: -11px;
@@ -252,7 +252,7 @@ $time-delay: 0s, 100ms, 200ms, 300ms, 400ms, 500ms, 600ms, 700ms;
       margin-bottom: 7px;
     }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 200px;
     font-size: 14px;
 
@@ -270,7 +270,7 @@ $time-delay: 0s, 100ms, 200ms, 300ms, 400ms, 500ms, 600ms, 700ms;
   border-radius: 50px;
   width: 18px;
   height: 18px;
-  color: $color-accent;
+  color: var(--color-accent);
   background-color: #ffffff;
   padding: 0;
 
@@ -282,7 +282,7 @@ $time-delay: 0s, 100ms, 200ms, 300ms, 400ms, 500ms, 600ms, 700ms;
     box-shadow: 0px 8px 50px rgba(210, 20, 67, 0.6);
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 26px;
     height: 26px;
   }
@@ -292,7 +292,7 @@ $time-delay: 0s, 100ms, 200ms, 300ms, 400ms, 500ms, 600ms, 700ms;
   width: 7px;
   height: 7px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 10px;
     height: 10px;
   }
@@ -309,7 +309,7 @@ $time-delay: 0s, 100ms, 200ms, 300ms, 400ms, 500ms, 600ms, 700ms;
 
     z-index: 5;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     top: 160px;
     right: 75px;
   }
@@ -332,7 +332,7 @@ $time-delay: 0s, 100ms, 200ms, 300ms, 400ms, 500ms, 600ms, 700ms;
 
   li:not(:last-child) {
     margin-bottom: 13px;
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       margin-bottom: 16px;
     }
   }
@@ -342,14 +342,14 @@ $time-delay: 0s, 100ms, 200ms, 300ms, 400ms, 500ms, 600ms, 700ms;
   font-family: Titan One;
   font-size: 28px;
   line-height: 1.14;
-  color: $color-accent;
+  color: var(--color-accent);
 
   position: relative;
   z-index: 4;
 
   transition: 250ms;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 46px;
   }
 }
@@ -366,7 +366,7 @@ $time-delay: 0s, 100ms, 200ms, 300ms, 400ms, 500ms, 600ms, 700ms;
   right: -10px;
 
   z-index: 1;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     height: 30px;
     width: 30px;
     top: -4px;
@@ -395,7 +395,7 @@ $time-delay: 0s, 100ms, 200ms, 300ms, 400ms, 500ms, 600ms, 700ms;
 
     z-index: 5;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 293px;
     height: 232px;
     bottom: 0;
@@ -442,7 +442,7 @@ $time-delay: 0s, 100ms, 200ms, 300ms, 400ms, 500ms, 600ms, 700ms;
     bottom: 46px;
     left: 307px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     height: 538px;
     width: 538px;
     bottom: 75px;
