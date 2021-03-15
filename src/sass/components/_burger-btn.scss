@@ -20,7 +20,7 @@
     
     .burger-btn::after,
     .burger-btn::before,
-    .burger-btn--span {
+    .burger-btn-span {
         position: absolute;
         content: '';
         height: 1px;
@@ -34,8 +34,8 @@
     .burger-btn:hover::before,
     .burger-btn:focus::after,
     .burger-btn:hover::before,
-    .burger-btn--span:focus,
-    .burger-btn--span:hover {
+    .burger-btn-span:focus,
+    .burger-btn-span:hover {
         background-color: #FFF;
     }
     
@@ -59,7 +59,7 @@
         transform: rotate(-45deg);
     }
     
-    .burger-btn.is-open .burger-btn--span {
+    .burger-btn.is-open .burger-btn-span {
         opacity: 0;
     }
     
