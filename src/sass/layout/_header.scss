@@ -1,121 +1,150 @@
-        header {
-            background-color: var(--sub-title-elipse);
-        }
-        
-        .logo {
-            @media screen and (max-width: 480px) {
-                padding: 6px 0px;
-            }
-            @media screen and (min-width: 480px) {
-                padding: 6px 0px;
-            }
-            @media screen and (min-width: 767px) {
-                padding: 37px 0px 6px;
-            }
-        }
-        
-        @media screen and (max-width: 480px) {
-            .buttons--buy {
-                position: relative;
-                margin: 0px;
-                width: 209px;
-                height: 44px;
-                font-size: 16px;
-                line-height: 21px;
-                font-weight: bold;
-                color: var(--color-accent);
-                background: #FFFFFF;
-                &:hover,
-                &:focus {
-                    background: #ECEBEB;
-                }
-            }
-            .buttons--tablet {
-                display: none;
-            }
-            //цeнтрировать кнопку//
-            .buttons--center {
-                position: absolute;
-                transform: translateX(25%);
-            }
-            .buttons-buy--svg {
-                position: absolute;
-                height: 10px;
-                top: 40%;
-                right: -50%;
-            }
-            .header-block {
-                margin-top: 76px;
-            }
-            .header-list {
-                margin: 11px 0px 11px 24px;
-            }
-            .header-link {
-                display: block;
-                font-family: var(--text-main-font);
-                font-weight: bold;
-                font-size: 14px;
-                line-height: 18px;
-                color: #FFFFFF;
-                transition: all 250ms;
-                &:hover,
-                &:focus {
-                    color: var(--color-accent);
-                }
-            }
-            .header-link--current {
-                color: var(--color-accent);
-            }
-        }
-        
-        .burger-menu {
-            position: fixed;
-            top: 0%;
-            right: 0%;
-            padding: 60px 0px;
-            height: 100%;
-            width: 100%;
-            transition: all 250ms;
-            transform: translateX(800px);
-            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.50), 0 10px 10px rgba(0, 0, 0, 0.22);
-            background-color: var(--background-mobile-menu);
-        }
-        
-        .burger-menu.is-open {
-            transform: translateX(0px);
-        }
-        
-        .underline {
-            width: 100%;
-            margin: 0%;
-            border: 1px solid #E18298;
-        }
-        
-        // @media screen and (max-width: 1199px) {
-        //     .buttons--buy {
-        //         position: relative;
-        //         margin: 0px;
-        //         width: 209px;
-        //         height: 44px;
-        //         font-size: 16px;
-        //         line-height: 21px;
-        //         font-weight: bold;
-        //         color: var(--color-accent);
-        //         background: #FFFFFF;
-        //         &:hover,
-        //         &:focus {
-        //             background: #ECEBEB;
-        //         }
-        //     }
-        //     .buttons-buy--svg {
-        //         position: absolute;
-        //         height: 10px;
-        //         top: 40%;
-        //         right: -50%;
-        //     }
-        // }
-        @media screen and (min-width: 1200px) {
-            .burger-menu {
-                display: none;
-            }
-        }
+  header {
+      background-color: var(--sub-title-elipse);
+      @media screen and (min-width: 768px) {
+          display: flex;
+      }
+      .header-flex {
+          display: flex;
+      }
+  }
+  
+  .logo {
+      @media screen and (max-width: 480px) {
+          padding: 6px 0px;
+      }
+      @media screen and (min-width: 480px) {
+          padding: 6px 0px;
+      }
+      @media screen and (min-width: 767px) {
+          padding: 37px 0px 6px;
+      }
+  }
+  
+  .btn-tablet {
+      display: none;
+  }
+  
+  .buttons--buy {
+      position: relative;
+      margin: auto;
+      width: 209px;
+      height: 44px;
+      font-size: 16px;
+      line-height: 21px;
+      font-weight: bold;
+      color: var(--color-accent);
+      background: #FFFFFF;
+      &:hover,
+      &:focus {
+          background: #ECEBEB;
+      }
+  }
+  
+  .buttons--tablet {
+      display: none;
+  }
+  
+  .buttons-buy--svg {
+      position: absolute;
+      height: 10px;
+      top: 40%;
+      right: -50%;
+  }
+  
+  .header-block {
+      margin-top: 76px;
+  }
+  
+  .header-list {
+      margin: 11px 0px 11px 24px;
+  }
+  
+  .header-link {
+      display: block;
+      font-family: var(--text-main-font);
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 18px;
+      color: #FFFFFF;
+      transition: all 250ms;
+      &:hover,
+      &:focus {
+          color: var(--color-accent);
+      }
+  }
+  
+  .header-link--current {
+      color: var(--color-accent);
+  }
+  
+  .burger-menu {
+      position: fixed;
+      z-index: 1000;
+      top: 0%;
+      right: 0%;
+      padding: 60px 0px;
+      height: 100%;
+      width: 100%;
+      transition: all 250ms;
+      transform: translateX(10000px);
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.50), 0 10px 10px rgba(0, 0, 0, 0.22);
+      background-color: var(--background-mobile-menu);
+  }
+  
+  .burger-menu.is-open {
+      transform: translateX(0px);
+  }
+  
+  .underline {
+      width: 100%;
+      margin: 0%;
+      border: 1px solid #E18298;
+  }
+  
+  @media screen and (min-width: 768px) {
+      .btn-tablet {
+          display: block;
+          margin: 38px 0px 6px 341px;
+          width: 209px;
+          height: 44px;
+          font-size: 16px;
+          line-height: 21px;
+          font-weight: bold;
+          color: var(--color-accent);
+          background: #FFFFFF;
+          &:hover,
+          &:focus {
+              background: #ECEBEB;
+          }
+      }
+  }
+  
+  @media screen and (max-width: 1199px) {
+      .buttons--buy {
+          position: relative;
+          margin: 0px;
+          width: 209px;
+          height: 44px;
+          font-size: 16px;
+          line-height: 21px;
+          font-weight: bold;
+          color: var(--color-accent);
+          background: #FFFFFF;
+          &:hover,
+          &:focus {
+              background: #ECEBEB;
+          }
+      }
+      .buttons-buy--svg {
+          position: absolute;
+          height: 10px;
+          top: 40%;
+          right: -50%;
+      }
+  }
+  
+  @media screen and (min-width: 1280px) {
+      .header-nav {
+          display: block;
+      }
+  }
