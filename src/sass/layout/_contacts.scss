@@ -44,14 +44,20 @@
   &-active .arrow,
   &-button:hover .arrow,
   &-button:focus .arrow {
+    stroke: var(--color-accent);
+  }
+  &-active {
+    background-color: var(--color-accent);
+    color: var(--background-elements);
+  }
+  &-active .arrow {
     stroke: var(--background-elements);
   }
-  &-active,
   &-button:hover,
   &-button:focus {
     cursor: pointer;
-    background-color: var(--color-accent);
-    color: var(--background-elements);
+    background-color: var(--button-hover);
+    color: var(--color-accent);
   }
 
   &-item {
