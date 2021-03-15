@@ -63,6 +63,11 @@
         opacity: 0;
     }
     
+    // @media screen and (min-width: 768px) {
+    //     .burger-btn.is-open {
+    //         position: absolute;
+    //     }
+    // }
     @media screen and (min-width: 1280px) {
         .burger-btn {
             display: none;
