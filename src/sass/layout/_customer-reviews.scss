@@ -1,3 +1,8 @@
+:root {
+  --customer-reviews-bgc: #fafafa;
+  --customer-review-dots: #c7133e;
+}
+
 .customer-reviews {
   padding-bottom: 86px;
 }
@@ -129,11 +134,6 @@
     &::before {
       top: 15%;
       left: 9%;
-
-      width: 54px;
-      height: 40px;
-      background-image: url(../../images/customer-reviews/quotes.svg);
-      background-repeat: no-repeat;
     }
   }
 
@@ -169,11 +169,6 @@
     &::before {
       top: 24%;
       left: 5%;
-
-      width: 54px;
-      height: 40px;
-      background-image: url(../../images/customer-reviews/quotes.svg);
-      background-repeat: no-repeat;
     }
     .review-text {
       font-size: 16px;
