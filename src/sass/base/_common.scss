@@ -20,7 +20,10 @@ ul {
     margin: 0;
     padding: 0;
 }
-
+main{
+    overflow: hidden;
+    overflow-x: hidden;
+}
 a {
     text-decoration: none;
 }
