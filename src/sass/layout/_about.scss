@@ -148,20 +148,19 @@
   align-items: center;
   text-align: center;
   padding: 13px 42px;
-
   font-family: var(--text-main-font);
   font-weight: 700;
   font-size: 14px;
   color: var(--color-accent);
   background-color: #fff;
-
+  transition: background-color var(--transition-time) var(--time-function);
   @media screen and (min-width: 768px) {
     font-size: 16px; 
   }
 
   &:hover,
   &:focus {
-    background-color: transparent;
+    background-color: #ECEBEB;
   }
 
   & .arrow {
