@@ -2,9 +2,9 @@
   position: relative;
   padding: 0;
 }
-// html {
-//   scroll-behavior: smooth;
-// }
+html {
+  scroll-behavior: smooth;
+}
 .btn {
   padding: 0;
   margin: 0;
@@ -159,16 +159,16 @@
   display: flex;
   flex-flow: column;
   padding-top: 104px;
-  height: 502px;
+  height: 100vh;
   background-color: var(--background-mobile-menu);
-  overflow-y: auto;
-  overflow-x: hidden;
+  // overflow-y: auto;
+  // overflow-x: hidden;
   width: 100%;
   max-height: 100vh;
   border-bottom-left-radius: 5%;
   transition: 0.5s;
   @media (min-width: 768px) {
-    height: 408px;
+    height: 100vh;
   }
   @media (min-width: 1280px) {
     position: relative;
@@ -178,7 +178,7 @@
     width: auto;
     height: auto;
     padding-top: 0;
-    overflow-y: visible;
+    overflow: visible;
     flex-flow: row-reverse;
     & .menu__link:not(:last-child) {
       margin-left: 35px;
@@ -201,7 +201,7 @@
 .menu-list-item {
   display: flex;
   align-items: center;
-  padding-left: 21px;
+  padding-left: 30px;
   height: 42px;
   font-weight: 700;
   font-size: 14px;
@@ -217,7 +217,7 @@
 
 .menu__link {
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 700;
   color: #ffffff;
   @media (min-width: 1280px) {
     font-size: 16px;
@@ -256,17 +256,19 @@
   margin-left: 21px;
   font-weight: 700;
   font-size: 16px;
+  line-height: 1;
   box-shadow: none;
-  transition: 250ms;
-  &:hover,
-  &:focus {
+  transition: color 250ms var(--time-function);
+  &:hover,&:focus {
     outline: 0;
-    transform: scale(1);
-    background-color: #c7133e;
-    color: #ffffff;
+    background-color: #ECEBEB;
+    color: #D41443;
+    fill: #D41443;
+    stroke: #d41443;
   }
   @media (min-width: 768px) {
     width: 185px;
+    
   }
 
   @media (min-width: 1280px) {
@@ -275,7 +277,22 @@
     margin-bottom: 0;
   }
 }
-
+.buy-now{
+  line-height: 1;
+  border-radius: 22px;
+  background-color: var(--background-elements);
+  color: var(--color-accent);
+  border: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  min-width: 161px;
+  font-weight: bold;
+  font-size: 16px;
+  &:hover,&:focus {
+    outline: 0;
+    background-color: #ECEBEB;
+    stroke: #d41443;
+}}
 .menu__nav .buy-now {
   position: absolute;
   top: 60px;
@@ -283,11 +300,14 @@
     position: static;
   }
 }
-
+.buy-now.arrow:hover, .buy-now.arrow:focus{
+  stroke: #d41443;
+}
 .buy-now.tablet {
   margin-bottom: 0;
   margin-left: 30px;
   width: 160px;
+  height: auto;
   .menu.menu_active + & {
     display: none;
   }
@@ -337,7 +357,7 @@
   height: 580px;
   background-color: #ffffff;
   border-radius: 24px;
-  padding-top: 40px;
+  padding-top: 10px;
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 20px;
@@ -347,11 +367,9 @@
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @media (min-width: 480px) {
     width: 450px;
-    padding-left: 40px;
-    padding-right: 40px;
   }
   @media (min-width: 768px) {
-    top: 55%;
+    top: 100%;
     height: auto;
     transform: translate(-50%, -50%) scale(1);
   }
@@ -380,6 +398,7 @@
   &:hover,
   &:focus {
     transform: scale(1.1);
+    cursor: pointer;
   }
 }
 .close-button-img {
@@ -416,13 +435,13 @@ input:-webkit-autofill {
 .order-form-title {
   display: flex;
   flex-direction: column;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 18px;
   color: var(--background-mobile-menu);
 }
 .input-title input {
-  padding-left: 42px;
+  padding-left: 16px;
   height: 40px;
   border: 1px solid var(--modal-input-color);
   border-radius: 4px;
@@ -472,6 +491,7 @@ textarea {
   font-size: 14px;
   border: 1px solid var(--modal-input-color);
   border-radius: 4px;
+  resize: none;
   &:hover,
   &:focus {
     fill: var(--color-accent);
@@ -565,7 +585,7 @@ textarea {
   &:hover,
   &:focus {
     transform: scale(1.1);
-    box-shadow: 0px 8px 50px rgba(210, 20, 67, 0.4);
+    // box-shadow: 0px 8px 50px rgba(210, 20, 67, 0.4);
   }
 }
 .order-product:checked ~ .order-button {

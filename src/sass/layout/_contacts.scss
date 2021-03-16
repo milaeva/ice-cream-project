@@ -7,7 +7,7 @@
 }
 .arrow {
   fill: transparent;
-  stroke: var(--color-accent);
+  stroke: currentColor;
   width: 8px;
   height: 10px;
   margin-left: 13px;
@@ -25,7 +25,23 @@
     rgba(255, 255, 255, 1) 81px,
     rgba(255, 245, 246, 1) 81px
   );
-  &-button {
+  &-button-left {
+    border-radius: 22px;
+    background-color: var(--color-accent);
+    color: var(--background-elements);
+    stroke: #fff;
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    min-width: 161px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.31;
+    transition-property: background-color, color;
+    transition-duration: var(--transition-time);
+    transition-timing-function: var(--time-function);
+  }
+  &-button-right {
     border-radius: 22px;
     background-color: var(--background-elements);
     color: var(--color-accent);
@@ -41,17 +57,29 @@
     transition-timing-function: var(--time-function);
   }
 
-  &-active .arrow,
-  &-button:hover .arrow,
-  &-button:focus .arrow {
+  &-active-left .arrow,
+  &-button-left:hover .arrow,
+  &-button-left:focus .arrow {
     stroke: var(--background-elements);
   }
-  &-active,
-  &-button:hover,
-  &-button:focus {
+  &-active-left,
+  &-button-left:hover,
+  &-button-left:focus {
     cursor: pointer;
-    background-color: var(--color-accent);
+    background-color: var(--button-left-focus);
     color: var(--background-elements);
+  }
+  &-active-right .arrow,
+  &-button-right:hover .arrow,
+  &-button-right:focus .arrow {
+    stroke: var(--color-accent);
+  }
+  &-active-right,
+  &-button-right:hover,
+  &-button-right:focus {
+    cursor: pointer;
+    background-color: var(--right-button-hover);
+    color: var(--color-accent);
   }
 
   &-item {
