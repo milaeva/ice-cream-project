@@ -259,16 +259,16 @@ html {
   line-height: 1;
   box-shadow: none;
   transition: color 250ms var(--time-function);
-  &:hover,&:focus {
+  &:hover,
+  &:focus {
     outline: 0;
-    background-color: #ECEBEB;
-    color: #D41443;
-    fill: #D41443;
+    background-color: #ecebeb;
+    color: #d41443;
+    fill: #d41443;
     stroke: #d41443;
   }
   @media (min-width: 768px) {
     width: 185px;
-    
   }
 
   @media (min-width: 1280px) {
@@ -277,7 +277,7 @@ html {
     margin-bottom: 0;
   }
 }
-.buy-now{
+.buy-now {
   line-height: 1;
   border-radius: 22px;
   background-color: var(--background-elements);
@@ -288,11 +288,13 @@ html {
   min-width: 161px;
   font-weight: bold;
   font-size: 16px;
-  &:hover,&:focus {
+  &:hover,
+  &:focus {
     outline: 0;
-    background-color: #ECEBEB;
+    background-color: #ecebeb;
     stroke: #d41443;
-}}
+  }
+}
 .menu__nav .buy-now {
   position: absolute;
   top: 60px;
@@ -300,7 +302,8 @@ html {
     position: static;
   }
 }
-.buy-now.arrow:hover, .buy-now.arrow:focus{
+.buy-now.arrow:hover,
+.buy-now.arrow:focus {
   stroke: #d41443;
 }
 .buy-now.tablet {
@@ -325,7 +328,6 @@ html {
   height: 8px;
   margin-left: 26px;
 }
-
 
 // модальное окно
 .backdrop {
