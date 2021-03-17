@@ -28,7 +28,6 @@
     right: 0px;
     transition: all 250ms;
     background-color: var(--color-accent);
-    
   }
   .burger-btn:focus::after,
   .burger-btn:hover::before,
@@ -36,7 +35,7 @@
   .burger-btn:hover::before,
   .burger-btn--span:focus,
   .burger-btn--span:hover {
-      background-color: #FFF;
+    background-color: #fff;
   }
   .burger-btn::after {
     top: 0%;
@@ -49,16 +48,15 @@
   .burger-btn.is-open::after {
     bottom: 0%;
     transform: rotate(45deg);
-}
+  }
   .burger-btn.is-open::before {
     top: 0%;
     transform: rotate(-45deg);
-    
   }
   .burger-btn.is-open .burger-btn--span {
     opacity: 0;
   }
 }
-.burger-btn.is-open{
+.burger-btn.is-open {
   position: fixed;
 }
