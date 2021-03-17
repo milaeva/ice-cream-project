@@ -1,17 +1,44 @@
-(() => {
-    const menuBtnRef = document.querySelector("[data-menu-button]");
-    const mobileMenuRef = document.querySelector("[data-menu]");
+// Бургер меню
 
-    menuBtnRef.addEventListener("click", () => {
-        const expanded =
-            menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+function burgerMenu(selector) {
+  let menu = $(selector);
+  let button = menu.find('.menu__button,.buy-now');
+  let links = menu.find('.menu__link');
+  let overlay = menu.find('.menu__overlay');
 
-        menuBtnRef.classList.toggle("is-open");
-        menuBtnRef.setAttribute("aria-expanded", !expanded);
+  button.on('click', e => {
+    e.preventDefault();
+    toggleMenu();
+  });
 
-        mobileMenuRef.classList.toggle("is-open");
-        document.body.classList.toggle('menu-open');
+  links.on('click', () => toggleMenu());
+  overlay.on('click', () => toggleMenu());
 
-    });
+  function toggleMenu() {
+    menu.toggleClass('menu_active');
+    if (menu.hasClass('menu_active')) {
+      $('body').css('overflow', 'hidden');
+    } else {
+      $('body').css('overflow', 'visible');
+    }
+  }
+}
 
-})();
+burgerMenu('.menu');
+
+// Скрипт кнопки Вверх
+
+// var btn = $('#top__button');
+
+// $(window).scroll(function() {
+//   if ($(window).scrollTop() > 500) {
+//     btn.addClass('show');
+//   } else {
+//     btn.removeClass('show');
+//   }
+// });
+
+// btn.on('click', function(e) {
+//   e.preventDefault();
+//   $('header').animate({ scrollTop: 0 }, '300');
+// });
