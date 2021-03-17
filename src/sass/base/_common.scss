@@ -1,5 +1,6 @@
 body {
     min-width: 320px;
+    font-family: var(--text-main-font);
 }
 
 h1,
@@ -20,7 +21,10 @@ ul {
     margin: 0;
     padding: 0;
 }
-
+main{
+    overflow: hidden;
+    overflow-x: hidden;
+}
 a {
     text-decoration: none;
 }
