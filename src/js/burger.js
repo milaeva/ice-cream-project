@@ -28,17 +28,17 @@ burgerMenu('.menu');
 
 // Скрипт кнопки Вверх
 
-var btn = $('#top__button');
+// var btn = $('#top__button');
 
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 500) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
-});
+// $(window).scroll(function() {
+//   if ($(window).scrollTop() > 500) {
+//     btn.addClass('show');
+//   } else {
+//     btn.removeClass('show');
+//   }
+// });
 
-btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({ scrollTop: 0 }, '300');
-});
+// btn.on('click', function(e) {
+//   e.preventDefault();
+//   $('header').animate({ scrollTop: 0 }, '300');
+// });
